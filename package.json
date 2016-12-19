@@ -1,0 +1,21 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "Simple tic-tac-toe game implemented with html, css and js",
+  "scripts": {
+    "start": "browser-sync start --server 'src' --files 'src'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wemyss/PROJ1-TicTacToe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wemyss/PROJ1-TicTacToe/issues"
+  },
+  "homepage": "https://github.com/wemyss/PROJ1-TicTacToe#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.5"
+  }
+}
