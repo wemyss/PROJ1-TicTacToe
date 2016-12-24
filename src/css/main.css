@@ -1,3 +1,32 @@
 /* I've included bootstrap 3 (see index.html), so make sure to check out the docs */
 /* as there is a lot of stuff there that will help you. */
 /* Use this file to override styles, colors or change layouts :) */
+h1 {
+  margin-left:-15px;
+}
+
+.TicTacToe {
+  margin: 0 auto;
+  display: block;
+  width:360px;
+  height:360px;
+}
+
+.square {
+  border: 5px solid blue;
+  border-radius: 2px;
+  margin:0px;
+  width:120px;
+  height:120px;
+  font-size:400%;
+  padding-top:5px;
+}
+
+#restart {
+  margin-top:20px;
+  margin-left:-18px;
+}
+
+.won {
+  background-color:light blue;
+}
