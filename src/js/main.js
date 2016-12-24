@@ -6,3 +6,11 @@ var player = 'X';
 function check()
 {
   )
+
+  $('#restart').click(function()
+{
+  $('.square').innerHTML('');
+  $('.square').className = ""; 
+  // document.getElementById("whatever").className = "";
+  turn = 0;
+}
