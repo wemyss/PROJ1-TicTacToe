@@ -3,3 +3,6 @@
 var turn = 0;
 var symbol = 'X';
 var player = 'X';
+function check()
+{
+  )
