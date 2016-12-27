@@ -18,6 +18,7 @@ function reset()
       document.getElementById('TicTacToe-1').className = "";
     }
   }
+  player = 1;
 }
 
 var table = document.getElementById('TicTacToe-1');
@@ -54,17 +55,4 @@ function clickCell(cell, x, y)
       player = 1;
     }
   }
-}
-
-function reset() 
-{
-  for (var i = 0; i < GRID_SIZE; i++) 
-  {
-    for (var j = 0; j < GRID_SIZE; j++) 
-    {
-      grid[i][j]=0;
-      document.getElementById("cell_"+i+"_"+j).innerHTML = "&nbsp;";
-    }
-  }
-  player = 1;
 }
