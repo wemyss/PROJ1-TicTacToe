@@ -4,9 +4,9 @@ var GRID_SIZE = 3;
 var grid = [];
 var player = 1;
 
-reset();
+restart();
 
-function reset() 
+function restart() 
 {
   for (var i = 0; i < GRID_SIZE; i++) 
   {
