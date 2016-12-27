@@ -41,7 +41,7 @@ function tableClick(event)
     }
 }
 
-function clickCell(cell, x, y) 
+function clickCell( x, y) 
 {
   alert("i made it in click cell");
   if (grid[x][y] == 0) 
