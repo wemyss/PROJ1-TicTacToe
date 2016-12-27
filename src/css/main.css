@@ -8,6 +8,7 @@ h1 {
 table {
   margin: 0 auto;
   display: block;
+  margin: auto;
   /* width:360px;
   height:360px; */
 }
