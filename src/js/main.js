@@ -43,17 +43,17 @@ function clickCell(cell, x, y)
     {
       cell.className = "x";
       cell.innerHTML = "X";
-      checkWin('X');
-      grid[x][y]=1;
+      grid[x][y] = 1;
       player = 2;
+      checkWin(1);
     } 
     else 
     {
       cell.className = "o";
       cell.innerHTML = "O";
-      checkWin('0');
       grid[x][y] = 2;
       player = 1;
+      checkWin(2);
     }
   }
 }
