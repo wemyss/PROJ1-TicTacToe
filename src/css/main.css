@@ -5,7 +5,7 @@ h1 {
   margin-left:-15px;
 }
 
-.TicTacToe {
+.TicTacToe td {
   margin: 0 auto;
   display: block;
   width:360px;
