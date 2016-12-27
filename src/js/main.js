@@ -4,17 +4,23 @@ var GRID_SIZE = 3;
 var grid = [];
 var player = 1;
 
-for (var i = 0; i < GRID_SIZE; i++) 
+reset();
+
+function reset() 
 {
-  grid[i] = [];
-  
-  for (var j = 0; j < GRID_SIZE; j++) 
+  for (var i = 0; i < GRID_SIZE; i++) 
   {
-    grid[i][j] = 0;
+    grid[i] = [];
+
+    for (var j = 0; j < GRID_SIZE; j++) 
+    {
+      grid[i][j] = 0;
+      document.getElementById('TicTacToe-1').className = "";
+    }
   }
 }
 
-var table = document.getElementById("tic-tac-toe-1");
+var table = document.getElementById('TicTacToe-1');
 table.addEventListener("click", tableClick);
 
 function tableClick(event) 
