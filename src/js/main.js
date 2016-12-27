@@ -20,7 +20,7 @@ function restart()
   player = 1;
 }
 
-var table = document.getElementById('TicTacToe-1');
+var table = document.getElementById("TicTacToe-1");
 table.addEventListener("click", tableClick);
 
 function tableClick(event) 
