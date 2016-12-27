@@ -21,12 +21,12 @@ function restart()
 }
 
 var table = document.getElementById("TicTacToe-1");
-table.addEventListener("click", tableClick();
+table.addEventListener("click", tableClick);
 
 function tableClick(event) 
 {
     var element = event.target;
-    if (element && element.tagName === "TD") 
+    if (element.tagName === "TD") 
     {
       
        var y = element.cellIndex;
