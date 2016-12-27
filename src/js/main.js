@@ -4,10 +4,11 @@ var GRID_SIZE = 3;
 var grid = [];
 var player = 1;
 
-// restart();
+restart()
 
 function restart() 
 {
+  alert("New game!");
   for (var i = 0; i < GRID_SIZE; i++) 
   {
     grid[i] = [];
