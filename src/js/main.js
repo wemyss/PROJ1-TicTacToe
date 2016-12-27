@@ -32,7 +32,6 @@ function tableClick(event)
   
     if (element  && element.tagName == "TD") 
     {
-      // alert("it knows the tag name is td");
        var y = element.cellIndex;
        var x = element.parent.rowIndex;
        alert("cell index " + y + " row index " + x);
@@ -41,7 +40,7 @@ function tableClick(event)
     }
 }
 
-function clickCell( x, y) 
+function clickCell(cell, x, y) 
 {
   alert("i made it in click cell");
   if (grid[x][y] == 0) 
@@ -52,7 +51,7 @@ function clickCell( x, y)
       cell.innerHTML = "X";
       grid[x][y] = 1;
       player = 2;
-      checkWin(1);
+      // checkWin(1);
     } 
     else 
     {
@@ -60,7 +59,7 @@ function clickCell( x, y)
       cell.innerHTML = "O";
       grid[x][y] = 2;
       player = 1;
-      checkWin(2);
+      // checkWin(2);
     }
     alert(cell.innerHTML);
   }
