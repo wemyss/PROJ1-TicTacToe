@@ -28,9 +28,10 @@ function tableClick(event)
     var element = event.target;
     if (element && element.tagName === "TD") 
     {
-      alert('oh hey, i made it inside the Table click method');
+      
        var y = element.cellIndex;
        var x = element.parent.rowIndex;
+      alert("cell index " + y + " row index " + x);
 
        clickCell(element, x, y);
     }
@@ -38,6 +39,7 @@ function tableClick(event)
 
 function clickCell(cell, x, y) 
 {
+  alert("i made it in click cell");
   if (grid[x][y] == 0) 
   {
     if (player == 1) 
@@ -56,6 +58,7 @@ function clickCell(cell, x, y)
       player = 1;
       checkWin(2);
     }
+    alert(cell.innerHTML);
   }
 }
 
