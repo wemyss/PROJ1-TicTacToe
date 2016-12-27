@@ -8,12 +8,11 @@ h1 {
 table {
   margin: 0 auto;
   display: block;
+  float: right;
 
 }
 
-table.center {
-    margin-left: auto;
-    margin-right: auto;
+
 
 tr {
     display: table-row;
