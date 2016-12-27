@@ -21,7 +21,7 @@ function restart()
 }
 
 var table = document.getElementById("TicTacToe-1");
-table.addEventListener("click", tableClick);
+table.addEventListener("click", tableClick();
 
 function tableClick(event) 
 {
