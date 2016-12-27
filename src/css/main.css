@@ -8,8 +8,8 @@ h1 {
 table {
   margin: 0 auto;
   display: block;
-  float: right;
-
+  float: center;
+  margin-left: 300px;
 }
 
 
@@ -37,9 +37,9 @@ tr {
 
 div {
   text-align: center;
-  margin: 0px auto;
+  margin: 0 auto;
     text-align: center;
-  margin: auto;
+  
 }
 
 body {
