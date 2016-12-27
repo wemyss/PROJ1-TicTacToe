@@ -14,7 +14,10 @@ function restart()
     for (var j = 0; j < GRID_SIZE; j++) 
     {
       grid[i][j] = 0;
-      document.getElementById('TicTacToe-1').className = "";
+      var cell = table.rows[i].cells[j];
+      cell.className = "";
+      cell.innerHTML = "";
+      // document.getElementById('TicTacToe-1').className = "";
     }
   }
   player = 1;
