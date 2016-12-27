@@ -8,10 +8,12 @@ h1 {
 table {
   margin: 0 auto;
   display: block;
-  margin: auto;
-  /* width:360px;
-  height:360px; */
+
 }
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
 
 tr {
     display: table-row;
