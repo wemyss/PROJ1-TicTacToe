@@ -4,7 +4,7 @@ var GRID_SIZE = 3;
 var grid = [];
 var player = 1;
 
-restart();
+// restart();
 
 function restart() 
 {
