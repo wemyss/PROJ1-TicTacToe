@@ -26,10 +26,10 @@ table.addEventListener("click", tableClick);
 function tableClick(event) 
 {
     var element = event.target;
-  alert(element + "element");
-    if (element  && element.tagName === "TD") 
+  
+    if (element  && element.tagName == "TD") 
     {
-      
+      // alert("it knows the tag name is td");
        var y = element.cellIndex;
        var x = element.parent.rowIndex;
        alert("cell index " + y + " row index " + x);
