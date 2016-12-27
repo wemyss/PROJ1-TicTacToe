@@ -5,12 +5,13 @@ h1 {
   margin-left:-15px;
 }
 
-.TicTacToe td {
+/* .TicTacToe {
   margin: 0 auto;
   display: block;
   width:360px;
   height:360px;
 }
+*/
 
 .TicTacToe td {
   border: 3px solid blue;
@@ -20,6 +21,13 @@ h1 {
   height:120px;
   font-size:400%;
   padding-top:5px;
+}
+
+div {
+  text-align: center;
+  margin: 0px auto;
+    text-align: center;
+  margin: auto;
 }
 
 body {
