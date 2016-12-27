@@ -14,7 +14,7 @@ table {
 
 tr {
     display: table-row;
-    vertical-align: inherit;
+    vertical-align: middle;
     border-color: inherit;
 }
 
@@ -26,6 +26,11 @@ tr {
   width:120px;
   height:120px;
   font-size:400%;
+   background: #FFFFFF;
+  font-family: arial;
+  text-align: center;
+   color: #008080
+  margin: auto;
   padding-top:5px;
 }
 
