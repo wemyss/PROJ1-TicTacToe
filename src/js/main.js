@@ -22,14 +22,13 @@ function restart()
 
 var table = document.getElementById("TicTacToe-1");
 table.addEventListener("click", tableClick);
-alert('Hello world!');
 
 function tableClick(event) 
 {
-  alert('oh hey, i made it inside the Table click method');
     var element = event.target;
     if (element && element.tagName === "TD") 
     {
+      alert('oh hey, i made it inside the Table click method');
        var y = element.cellIndex;
        var x = element.parent.rowIndex;
 
