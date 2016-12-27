@@ -26,12 +26,13 @@ table.addEventListener("click", tableClick);
 function tableClick(event) 
 {
     var element = event.target;
-    if (element.tagName === "TD") 
+  alert(element + "element");
+    if (element  && element.tagName === "TD") 
     {
       
        var y = element.cellIndex;
        var x = element.parent.rowIndex;
-      alert("cell index " + y + " row index " + x);
+       alert("cell index " + y + " row index " + x);
 
        clickCell(element, x, y);
     }
