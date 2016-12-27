@@ -13,7 +13,7 @@ table {
 }
 
 
-.TicTacToe td {
+ td {
   border: 3px solid blue;
   border-radius: 2px;
   margin:0px;
