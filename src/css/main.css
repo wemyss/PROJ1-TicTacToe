@@ -5,13 +5,13 @@ h1 {
   margin-left:-15px;
 }
 
-/* .TicTacToe {
+table {
   margin: 0 auto;
   display: block;
   width:360px;
   height:360px;
 }
-*/
+
 
 .TicTacToe td {
   border: 3px solid blue;
