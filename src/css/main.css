@@ -30,3 +30,8 @@ h1 {
 .won {
   background-color:light blue;
 }
+
+.square:hover {
+  background: #C2DBFC;
+  text-align: center;
+}
