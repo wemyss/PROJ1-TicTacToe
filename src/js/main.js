@@ -45,6 +45,7 @@ function clickCell(cell, x, y)
     {
       cell.className = "x";
       cell.innerHTML = "X";
+      checkWin('X');
       grid[x][y]=1;
       player = 2;
     } 
@@ -52,8 +53,28 @@ function clickCell(cell, x, y)
     {
       cell.className = "o";
       cell.innerHTML = "O";
+      checkWin('0');
       grid[x][y] = 2;
       player = 1;
     }
   }
 }
+
+function checkWin(symbol)
+{
+  // var cell = table.rows[y].cells[x];
+  if (grid[0][0] === symbol && grid[0][1] === symbol && grid[0][2] === symbol ||
+      grid[1][0] === symbol && grid[1][1] === symbol && grid[1][2] === symbol ||
+      grid[2][0] === symbol && grid[2][1] === symbol && grid[2][2] === symbol ||
+      grid[0][0] === symbol && grid[1][0] === symbol && grid[2][0] === symbol ||
+      grid[0][1] === symbol && grid[1][1] === symbol && grid[2][1] === symbol ||
+      grid[0][2] === symbol && grid[1][2] === symbol && grid[2][2] === symbol ||
+      grid[0][0] === symbol && grid[1][1] === symbol && grid[2][2] === symbol ||
+      grid[0][2] === symbol && grid[1][1] === symbol && grid[2][0] === symbol )
+  {
+      alert(symbol + " won!");
+      restart();
+  }
+}
+  
+  
