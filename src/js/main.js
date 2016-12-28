@@ -6,7 +6,7 @@ var player;
 var grid = [];
 
 var table = document.getElementById("TicTacToe-1");
- table.addEventListener("click", tableClick);
+table.addEventListener("click", tableClick);
 
 function restart() 
 {
@@ -42,7 +42,7 @@ function tableClick(event)
 //     }
 
     var element = event.target;
-
+    alert("I made it into tableClick" + element);
     if (element  && element.tagName === "TD") 
     {
        var y = element.cellIndex;
