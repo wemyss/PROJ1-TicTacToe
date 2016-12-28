@@ -4,8 +4,12 @@ var GRID_SIZE = 3;
 var grid = [];
 var player = 1;
 
+var table = document.getElementById("TicTacToe-1");
+ table.addEventListener("click", tableClick);
+
 function restart() 
 {
+  player = 1;
   alert("New game!");
   for (var i = 0; i < GRID_SIZE; i++) 
   {
@@ -19,17 +23,26 @@ function restart()
       cell.innerHTML = "";
       // document.getElementById('TicTacToe-1').className = "";
     }
-  }
-  player = 1;
+  }  
 }
-
-var table = document.getElementById("TicTacToe-1");
-table.addEventListener("click", tableClick);
 
 function tableClick(event) 
 {
+//   if (table != null) {
+//         for (var i = 0; i < table.rows.length; i++) {
+//             for (var j = 0; j < table.rows[i].cells.length; j++)
+//             table.rows[i].cells[j].onclick = function () {
+//                 tableText(this);
+//             };
+//         }
+//     }
+
+//     function tableText(tableCell) {
+//         alert(tableCell.innerHTML);
+//     }
+
     var element = event.target;
-  
+
     if (element  && element.tagName == "TD") 
     {
        var y = element.cellIndex;
