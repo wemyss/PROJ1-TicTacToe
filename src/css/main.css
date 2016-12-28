@@ -9,6 +9,10 @@ h1, p, title, .h1 {
   color: #FFFFFF;
 }
 
+.h {
+  color: #FFFFFF;
+}
+
 table {
   margin: 0 auto;
   display: block;
