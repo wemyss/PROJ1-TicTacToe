@@ -46,7 +46,7 @@ function tableClick(event)
     if (element.tagName === "TD") 
     {
        var y = element.cellIndex;
-       var x = element.parent.rowIndex;
+       var x = element.parentNode.rowIndex;
        alert("cell index " + y + " row index " + x);
 
        clickCell(element, x, y);
