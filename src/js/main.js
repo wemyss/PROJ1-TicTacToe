@@ -89,13 +89,7 @@ function checkWin(symbol)
       grid[0][2] === symbol && grid[1][1] === symbol && grid[2][0] === symbol )
   {
       alert("Player " + symbol + " won!");
-      won();
+      restart();
   }
 }
-
-funcion won()
-{
-  restart();
-}
-  
   
