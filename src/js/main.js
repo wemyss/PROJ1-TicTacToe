@@ -42,12 +42,12 @@ function tableClick(event)
 //     }
 
     var element = event.target;
-    alert("I made it into tableClick  " + element + "  " + element.tagName);
+   // alert("I made it into tableClick  " + element + "  " + element.tagName);
     if (element.tagName === "TD") 
     {
        var y = element.cellIndex;
        var x = element.parentNode.rowIndex;
-       alert("cell index " + y + " row index " + x);
+      // alert("cell index " + y + " row index " + x);
 
        clickCell(element, x, y);
     }
@@ -55,7 +55,6 @@ function tableClick(event)
 
 function clickCell(cell, x, y) 
 {
-  alert("i made it in click cell");
   if (grid[x][y] === 0) 
   {
     if (player === 1) 
@@ -64,7 +63,7 @@ function clickCell(cell, x, y)
       cell.innerHTML = "X";
       grid[x][y] = 1;
       player = 2;
-      // checkWin(1);
+      checkWin(1);
     } 
     else 
     {
@@ -72,7 +71,7 @@ function clickCell(cell, x, y)
       cell.innerHTML = "O";
       grid[x][y] = 2;
       player = 1;
-      // checkWin(2);
+      checkWin(2);
     }
     alert(cell.innerHTML);
   }
