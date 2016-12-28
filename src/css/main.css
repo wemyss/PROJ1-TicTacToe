@@ -3,6 +3,7 @@
 /* Use this file to override styles, colors or change layouts :) */
 h1 {
   margin-left:-15px;
+  color: #FFFFFF;
 }
 
 table {
@@ -54,7 +55,7 @@ body {
 } */
 
 td:hover {
-  background: #C2DBFC;
+  background: #4CECFE;
   text-align: center;
 }
 
@@ -63,7 +64,7 @@ td:hover {
   background: #00ff00;
 }
 .o { 
-  color: #E2C290;
+  color: #941FCE;
   background: #ff00ff;
 }
 
