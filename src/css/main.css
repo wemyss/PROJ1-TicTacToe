@@ -1,7 +1,7 @@
 /* I've included bootstrap 3 (see index.html), so make sure to check out the docs */
 /* as there is a lot of stuff there that will help you. */
 /* Use this file to override styles, colors or change layouts :) */
-h1, p {
+h1, p, title {
   display:block;
   font-family: Georgia, Serif;
   margin-left:-15px;
