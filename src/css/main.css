@@ -3,6 +3,7 @@
 /* Use this file to override styles, colors or change layouts :) */
 h1, p {
   display:block;
+  font-family: Georgia, Serif;
   margin-left:-15px;
   color: #FFFFFF;
 }
