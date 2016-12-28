@@ -6,7 +6,12 @@ h1 {
   color: #FFFFFF;
 }
 
-table {
+title
+{
+  color: #FFFFFF;
+}
+
+table, p {
   margin: 0 auto;
   display: block;
    margin-left: 400px; 
@@ -60,11 +65,11 @@ td:hover {
 }
 
 .x { 
-  color: #3F88C5;
+  color: #308dff;
   background: #00ff00;
 }
 .o { 
-  color: #941FCE;
+  color: #ffe3af;
   background: #ff00ff;
 }
 
