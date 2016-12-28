@@ -42,7 +42,7 @@ function tableClick(event)
 //     }
 
     var element = event.target;
-    alert("I made it into tableClick" + element);
+    alert("I made it into tableClick  " + element + "  " + element.tagName);
     if (element  && element.tagName === "TD") 
     {
        var y = element.cellIndex;
