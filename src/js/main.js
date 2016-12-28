@@ -28,26 +28,11 @@ function restart()
 
 function tableClick(event) 
 {
-//   if (table != null) {
-//         for (var i = 0; i < table.rows.length; i++) {
-//             for (var j = 0; j < table.rows[i].cells.length; j++)
-//             table.rows[i].cells[j].onclick = function () {
-//                 tableText(this);
-//             };
-//         }
-//     }
-
-//     function tableText(tableCell) {
-//         alert(tableCell.innerHTML);
-//     }
-
-    var element = event.target;
-   // alert("I made it into tableClick  " + element + "  " + element.tagName);
+    var element = event.target;  
     if (element.tagName === "TD") 
     {
        var y = element.cellIndex;
        var x = element.parentNode.rowIndex;
-      // alert("cell index " + y + " row index " + x);
 
        clickCell(element, x, y);
     }
@@ -89,7 +74,6 @@ function checkWin(symbol)
       grid[0][2] === symbol && grid[1][1] === symbol && grid[2][0] === symbol )
   {
       alert("Player " + symbol + " won!");
-      restart();
   }
 }
   
