@@ -73,7 +73,6 @@ function clickCell(cell, x, y)
       player = 1;
       checkWin(2);
     }
-    alert(cell.innerHTML);
   }
 }
 
