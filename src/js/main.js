@@ -1,13 +1,9 @@
 // Put your game functions/methods in here.
 // Think about when you want your functions to be called (on DOM event, on page load, etc.)
+
 var GRID_SIZE = 3;
-
-var player = 1;
-
+var player;
 var grid = [];
-grid[0] = [];
-grid[1] = [];
-grid[2] = [];
 
 var table = document.getElementById("TicTacToe-1");
  table.addEventListener("click", tableClick);
@@ -19,7 +15,6 @@ function restart()
   for (var i = 0; i < GRID_SIZE; i++) 
   {
     grid[i] = [];
-
     for (var j = 0; j < GRID_SIZE; j++) 
     {
       grid[i][j] = 0;
@@ -48,7 +43,7 @@ function tableClick(event)
 
     var element = event.target;
 
-    if (element  && element.tagName == "TD") 
+    if (element  && element.tagName === "TD") 
     {
        var y = element.cellIndex;
        var x = element.parent.rowIndex;
@@ -61,9 +56,9 @@ function tableClick(event)
 function clickCell(cell, x, y) 
 {
   alert("i made it in click cell");
-  if (grid[x][y] == 0) 
+  if (grid[x][y] === 0) 
   {
-    if (player == 1) 
+    if (player === 1) 
     {
       cell.className = "x";
       cell.innerHTML = "X";
