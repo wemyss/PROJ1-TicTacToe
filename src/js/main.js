@@ -1,8 +1,13 @@
 // Put your game functions/methods in here.
 // Think about when you want your functions to be called (on DOM event, on page load, etc.)
 var GRID_SIZE = 3;
-var grid = [];
+
 var player = 1;
+
+var grid = [];
+grid[0] = [];
+grid[1] = [];
+grid[2] = [];
 
 var table = document.getElementById("TicTacToe-1");
  table.addEventListener("click", tableClick);
