@@ -92,6 +92,7 @@ function checkWin(symbol)
       won();
   }
 }
+
 funcion won()
 {
   restart();
