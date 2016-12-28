@@ -59,7 +59,11 @@ td:hover {
 }
 
 .x { 
-  color: #3F88C5; }
+  color: #3F88C5;
+  background: #008080;
+}
 .o { 
-  color: #E2C290; }
+  color: #E2C290;
+  background: #ff00ff;
+}
 
